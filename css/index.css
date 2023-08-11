@@ -1,0 +1,506 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    flex-wrap: wrap;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+ 
+section{
+    width: 100%;
+    height: 100vh;
+
+}
+ 
+body::-webkit-scrollbar{
+
+  width: 0;
+  height: 0;
+ 
+
+}
+
+
+.inicio .tit{
+    text-align: center;
+    width: 32em;
+    height: 43em;
+}
+
+
+.fechaa{
+    width: 100%;
+    height: 18em;
+    background-color: rgb(195, 221, 221);
+}
+
+.fechaa .fecha{
+    text-align: center;
+}
+
+.fecha h1{
+    font-size: 4em;
+    color: white;
+    font-weight:900 ;
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+.invitacion div{
+    text-align: center;
+}
+
+.invitacion .osito{
+    width: 23em;
+}
+
+.invitacion .ubic{
+    width: 20em;
+ 
+}
+
+.invitacion h2{
+  text-indent: 3vh;
+  line-height: 10vh;
+    letter-spacing: 1vh;
+    word-spacing: 1vh;
+    font-size: 2em;
+    font-weight:100 ;
+    font-family: sans-serif;
+}
+
+#fondo {
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 35em;
+    max-height: 90%;
+    height: 35em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__close{
+    position: absolute;
+    margin-top: -34em;
+    margin-left:92%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26250;
+    padding: 0.5em;
+    border: 0.1em solid ;
+    border-radius: 0.5em;
+    display: inline-block;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+
+.modal__close:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
+
+
+#map{
+   
+    margin: auto;
+    height: 31em;
+    width: 31em;
+
+
+  
+}
+
+
+.invitacion p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1.5vh;
+    margin-top: -2em;
+}
+
+.invitacion .hero__cta{
+
+    font-size: 1em;
+    text-decoration: none;
+    list-style: none;
+    
+    border-radius: 2em;
+    padding: 1em;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    transition: 0.3s ease;
+    }
+
+    .invitacion .hero__cta:hover{
+        background-color:rgb(42, 41, 41);
+    }    
+    .confirmacion .auto{
+        width: 18em;
+    
+    }
+    .confirmacion{
+        margin-top: 55em;
+        text-align: center;
+    }
+
+    .confirmacion .titulo{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        word-spacing: 0.2em;
+        font-size: 2em;
+    }
+
+    .caja .foto{
+        display: inline-flex;
+        }
+        .foto .gio
+        {
+            
+            width: 26em;
+            height: 35em;
+            
+          
+           
+        }
+        .foto{
+            margin: -5em;
+        }
+
+        .asistenciaa .tittle{
+            font-size: 2em;
+            font-family: arial;
+            font-weight: 600;
+        }
+
+        .asistenciaa .info{
+            font-size: 1.3em;
+            font-family: arial;
+            font-weight: 100;
+            color: rgb(28, 28, 28);
+            letter-spacing: 0.1em;
+            word-spacing:0.2em ;
+        }
+
+        .asistenciaa a{
+            font-size: 1.3em;
+            background-color:black;
+            color: white;
+            text-decoration: none;
+            
+            border-radius: 15em;
+            padding: 0.5em;
+            font-weight: 700;
+            font-family: arial;
+            transition: 0.3s ease;
+        }
+        
+        .asistenciaa a:hover{
+            background-color:rgb(42, 41, 41);
+        }
+
+        #imagenfinal{
+            background-color: #acd9d9;
+            margin-top: 96em;
+              height: 40em;
+        }
+    
+        
+#imagenfinal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    word-spacing: 0em;
+    line-height: 2.5em;
+
+   
+}
+
+#imagenfinal p{
+    font-weight: 100;
+    font-size:1.5em;
+    }
+    
+    #imagenfinal h1{
+        font-weight: 900;
+        font-size: 1.7em;
+        font-style: oblique;
+    }
+    
+    #imagenfinal img{
+        width: 15em;
+    }
+
+    footer .ti{
+        background-color: rgb(235, 229, 229);
+        text-align: center;
+       padding: 0.5em;
+        font-family: arial;
+        font-weight: 100;
+      font-size: 0.8em;
+      color: black;
+    }
+
+    .ti a{
+        text-decoration: none;
+        color: rgb(165, 165, 165);
+        transition: 0.3s ease;
+    }
+
+    .ti a:hover{
+        color: rgb(121, 121, 121);
+    }
+    
+    footer .derechos{
+        padding: 1em;
+        background-color: rgb(202, 199, 199);
+        text-align: center;
+        font-family: sans-serif;
+        color: rgb(85, 84, 84);
+    }
+    
+    .derechos a{
+        text-decoration: none;
+        color: rgb(85, 84, 84);
+    }
+    
+    .separador{
+        width: 40em;
+    }
+
+@media screen 
+and (min-width: 750px)
+{
+
+    .invitacion h2{
+  
+          font-size: 3em;
+      
+      }
+
+      .invitacion p{
+       
+        font-size: 3em;
+        
+    }
+    
+    .invitacion .hero__cta{
+    
+        font-size: 1.3em;
+      
+        }
+
+        
+        .asistenciaa .tittle{
+            font-size: 3em;
+            font-family: arial;
+            font-weight: 600;
+        }
+
+        .asistenciaa .info{
+            font-size: 1.7em;
+           
+        }
+
+        .asistenciaa a{
+            font-size: 1.8em;
+           
+        }
+
+        #imagenfinal{
+          
+            margin-top: 95em;
+             
+        }
+
+        .confirmacion{
+            margin-top: 68%;
+            text-align: center;
+        }
+
+        .foto .isa
+        {
+            
+            width: 23em;
+            height: 23em;
+            
+            border-radius: 40em;
+           
+        }
+        .fecha h1{
+            font-size: 5em;}
+        
+    
+}
+@media screen 
+and (min-width: 1001px)
+{
+    .inicio{
+        background: url(../img/Isabella\ Mi\ Primer\ Añito.png) no-repeat;
+        background-size: cover;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 80%;
+        text-align: center;
+    }
+ .tit{
+       
+        opacity: 0;
+    }
+}
+
+@media screen 
+and (max-width: 1000px)
+{
+    .inicio{
+        background: url(../img/Diseño\ sin\ título\ \(1\).png) no-repeat;
+        background-size: cover;
+    }
+
+
+}
+@media only screen 
+and (max-width: 540px) {
+    #map{
+   
+        margin: auto;
+        height: 31em;
+        width: 20em;
+    
+    
+      
+    }
+    .modal__container{
+        margin: auto;
+        width: 90%;
+        max-width: 35em;
+        max-height: 90%;
+        height: 35em;
+        background-color: #fff;
+        border-radius: 0.5em;
+        padding: 1em;
+        display: grid;
+        gap: 1em;
+        place-items: center;
+        grid-auto-columns: 100%;
+        transform: var(--transform);
+        transition:var(--transition);
+    }
+    
+    .fecha h1{
+        font-size: 2.8em;
+    }
+    .invitacion h2{
+        font-size: 1.5em;
+        line-height: 2.5em;
+    }
+    .separador{
+        width: 25em;
+    }
+}
+
+@media only screen 
+and (max-width: 420px) {
+    .foto .isa
+    {
+        
+        width: 20em;
+        height: 20em;
+        
+        border-radius: 40em;
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+    }
+
+   
+}
+
+@media only screen 
+and (max-width: 420px) {
+   
+    #imagenfinal{
+          
+        margin-top: 100em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+    }
+
+   
+}
