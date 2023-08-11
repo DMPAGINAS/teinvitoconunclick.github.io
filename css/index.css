@@ -27,17 +27,21 @@ body::-webkit-scrollbar{
 
 }
 
+.inicio{
+    background: url(../img/portada.png) no-repeat;
 
+    background-size:contain;
+}
 .inicio .tit{
     text-align: center;
-    width: 32em;
-    height: 43em;
+    width: 39em;
+    height: 53.8em;
 }
 
 
 .fechaa{
     width: 100%;
-    height: 18em;
+    height: 20em;
     background-color: rgb(195, 221, 221);
 }
 
@@ -46,7 +50,7 @@ body::-webkit-scrollbar{
 }
 
 .fecha h1{
-    font-size: 4em;
+    font-size: 3em;
     color: white;
     font-weight:900 ;
     color: rgb(255, 255, 255);
@@ -214,14 +218,14 @@ body::-webkit-scrollbar{
         .foto .gio
         {
             
-            width: 26em;
-            height: 35em;
+            width: 30em;
+            height: 37em;
             
           
            
         }
         .foto{
-            margin: -5em;
+            margin: -3em;
         }
 
         .asistenciaa .tittle{
@@ -325,111 +329,39 @@ body::-webkit-scrollbar{
         width: 40em;
     }
 
-@media screen 
-and (min-width: 750px)
-{
-
-    .invitacion h2{
-  
-          font-size: 3em;
-      
-      }
-
-      .invitacion p{
-       
-        font-size: 3em;
-        
-    }
-    
-    .invitacion .hero__cta{
-    
-        font-size: 1.3em;
-      
-        }
-
-        
-        .asistenciaa .tittle{
-            font-size: 3em;
-            font-family: arial;
-            font-weight: 600;
-        }
-
-        .asistenciaa .info{
-            font-size: 1.7em;
-           
-        }
-
-        .asistenciaa a{
-            font-size: 1.8em;
-           
-        }
-
-        #imagenfinal{
-          
-            margin-top: 95em;
-             
-        }
-
-        .confirmacion{
-            margin-top: 68%;
-            text-align: center;
-        }
-
-        .foto .isa
-        {
-            
-            width: 23em;
-            height: 23em;
-            
-            border-radius: 40em;
-           
-        }
-        .fecha h1{
-            font-size: 5em;}
-        
-    
-}
-@media screen 
-and (min-width: 1001px)
-{
-    .inicio{
-        background: url(../img/Isabella\ Mi\ Primer\ Añito.png) no-repeat;
-        background-size: cover;
-    }
-
-    #imagenfinal{
-          
-        margin-top: 80em;
-         
-    }
-
-    .confirmacion{
-        margin-top: 80%;
-        text-align: center;
-    }
- .tit{
-       
-        opacity: 0;
-    }
-}
-
-@media screen 
-and (max-width: 1000px)
-{
-    .inicio{
-        background: url(../img/Diseño\ sin\ título\ \(1\).png) no-repeat;
-        background-size: cover;
-    }
 
 
-}
 @media only screen 
 and (max-width: 540px) {
+
+.inicio{
+
+    height: 72vh;
+}
+    .inicio {
+        background-size:contain;
+    }
+
+    .fecha h1{
+    font-size: 0.1em;
+    
+     
+    }
+    .foto .gio
+        {
+            
+            width: 25em;
+            height: 30em;
+            margin: -3.2em;
+          
+           
+        }
+
     #map{
    
         margin: auto;
         height: 31em;
-        width: 20em;
+        width: 20em;    
     
     
       
@@ -461,46 +393,10 @@ and (max-width: 540px) {
     .separador{
         width: 25em;
     }
-}
-
-@media only screen 
-and (max-width: 420px) {
-    .foto .isa
-    {
-        
-        width: 20em;
-        height: 20em;
-        
-        border-radius: 40em;
-       
-    }
     #imagenfinal{
-          
+        background-color: #acd9d9;
         margin-top: 70em;
-         
+          height: 40em;
     }
-
-    .confirmacion{
-        margin-top: 180%;
-        text-align: center;
-    }
-
-   
 }
 
-@media only screen 
-and (max-width: 420px) {
-   
-    #imagenfinal{
-          
-        margin-top: 100em;
-         
-    }
-
-    .confirmacion{
-        margin-top: 180%;
-        text-align: center;
-    }
-
-   
-}
