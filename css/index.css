@@ -27,11 +27,7 @@ body::-webkit-scrollbar{
 
 }
 
-.inicio{
-    background: url(../img/portada.png) no-repeat;
 
-    background-size:contain;
-}
 .inicio .tit{
     text-align: center;
     width: 39em;
@@ -41,7 +37,7 @@ body::-webkit-scrollbar{
 
 .fechaa{
     width: 100%;
-    height: 20em;
+    height: 18em;
     background-color: rgb(195, 221, 221);
 }
 
@@ -330,34 +326,79 @@ body::-webkit-scrollbar{
     }
 
 
-
+    @media only screen 
+    and (max-width: 490px) {
+        .inicio .tit{
+            text-align: center;
+            width: 30em;
+            height: 53.8em;
+        }
+    
+        .fecha h1{
+        font-size: 2.2em;}
+        .foto .gio
+        {
+            
+            width: 22em;
+            height: 30em;
+            margin: -3.2em;
+          
+           
+        }
+        .foto{
+            margin: 0.2em;
+        }
+         
+        }
+    
 @media only screen 
-and (max-width: 540px) {
+and (max-width: 420px) {
 
-.inicio{
-
-    height: 72vh;
-}
-    .inicio {
-        background-size:contain;
+    .inicio .tit{
+        text-align: center;
+        width: 26em;
+        height: 53.8em;
     }
 
     .fecha h1{
-    font-size: 0.1em;
+    font-size: 2.2em;
     
      
     }
     .foto .gio
         {
             
-            width: 25em;
+            width: 22em;
             height: 30em;
             margin: -3.2em;
           
            
         }
+        .foto{
+            margin: 0.2em;
+        }
 
-    #map{
+  
+    
+ 
+    .invitacion h2{
+        font-size: 1.5em;
+        line-height: 2.5em;
+    }
+    .separador{
+        width: 25em;
+    }
+    #imagenfinal{
+        background-color: #acd9d9;
+        margin-top: 80em;
+          height: 40em;
+    }
+}
+
+@media only screen 
+and (max-width: 540px) 
+{
+      #map{
    
         margin: auto;
         height: 31em;
@@ -382,21 +423,4 @@ and (max-width: 540px) {
         transform: var(--transform);
         transition:var(--transition);
     }
-    
-    .fecha h1{
-        font-size: 2.8em;
-    }
-    .invitacion h2{
-        font-size: 1.5em;
-        line-height: 2.5em;
-    }
-    .separador{
-        width: 25em;
-    }
-    #imagenfinal{
-        background-color: #acd9d9;
-        margin-top: 70em;
-          height: 40em;
-    }
 }
-
