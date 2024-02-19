@@ -1,4 +1,5 @@
-let Coords = {lat: -38.554745 , lng: -58.7410371};
+
+let Coords = {lat: -38.558149, lng: -58.6694818};
         let map;
         let marker;
         let mapDiv = document.getElementById('map')
@@ -6,7 +7,7 @@ let Coords = {lat: -38.554745 , lng: -58.7410371};
         function initMap(){
            
              map = new google.maps.Map(mapDiv,{
-                zoom:19,
+                zoom:15,
                 center: Coords,
             });
         
