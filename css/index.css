@@ -1,5 +1,4 @@
 
-
 *{
     padding: 0;
     margin: 0;
@@ -28,17 +27,22 @@ body::-webkit-scrollbar{
 }
 
 
-.inicio .tit{
+
+
+
+.inicio div{
     text-align: center;
-    width: 39em;
-    height: 53.8em;
 }
 
+.tit{
+    width: 25em;
 
+    margin-top: 27em;
+}
 .fechaa{
     width: 100%;
-    height: 18em;
-    background-color: rgb(195, 221, 221);
+    height: 20em;
+    background-color: #b9dca9;
 }
 
 .fechaa .fecha{
@@ -46,27 +50,35 @@ body::-webkit-scrollbar{
 }
 
 .fecha h1{
-    font-size: 3em;
+    font-size: 3.5em;
     color: white;
-    font-weight:900 ;
-    color: rgb(255, 255, 255);
-
+  font-style: italic;
+    font-weight:100;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
 }
 
-
+.fecha img{
+    width: 23em;
+    position: relative;
+    top: -8em;
+}
 
 .invitacion div{
     text-align: center;
 }
 
-.invitacion .osito{
-    width: 23em;
+.invitacion img{
+    width: 18em;
 }
 
-.invitacion .ubic{
-    width: 20em;
- 
+.invitacion .nube {
+    width: 31em;
+    height: 30em;
+    border-radius: 100em;
+    border: 1px solid rgb(0, 0, 0);
 }
+
 
 .invitacion h2{
   text-indent: 3vh;
@@ -75,7 +87,6 @@ body::-webkit-scrollbar{
     word-spacing: 1vh;
     font-size: 2em;
     font-weight:100 ;
-    font-family: sans-serif;
 }
 
 #fondo {
@@ -164,12 +175,12 @@ body::-webkit-scrollbar{
 }
 
 
+
 .invitacion p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: rgb(0, 0, 0);
     letter-spacing: 0.1.5vh;
-    margin-top: -2em;
 }
 
 .invitacion .hero__cta{
@@ -190,12 +201,12 @@ body::-webkit-scrollbar{
     .invitacion .hero__cta:hover{
         background-color:rgb(42, 41, 41);
     }    
-    .confirmacion .auto{
-        width: 18em;
+    .confirmacion .mariposa{
+        width: 12em;
     
     }
     .confirmacion{
-        margin-top: 55em;
+        margin-top: 85%;
         text-align: center;
     }
 
@@ -211,17 +222,17 @@ body::-webkit-scrollbar{
     .caja .foto{
         display: inline-flex;
         }
-        .foto .gio
+        .foto .isa
         {
             
-            width: 30em;
-            height: 37em;
+            width: 35em;
+            height: 35em;
             
-          
+            border-radius: 40em;
            
         }
         .foto{
-            margin: -3em;
+            margin: 3em;
         }
 
         .asistenciaa .tittle{
@@ -257,8 +268,8 @@ body::-webkit-scrollbar{
         }
 
         #imagenfinal{
-            background-color: #acd9d9;
-            margin-top: 96em;
+            background-color: #a9de9e;
+            margin-top: 105em;
               height: 40em;
         }
     
@@ -285,7 +296,8 @@ body::-webkit-scrollbar{
     }
     
     #imagenfinal img{
-        width: 15em;
+        width: 20em;
+        margin-top: -8em;
     }
 
     footer .ti{
@@ -322,87 +334,123 @@ body::-webkit-scrollbar{
     }
     
     .separador{
-        width: 40em;
+        width: 20em;
+        height: 10em;
     }
 
+@media screen 
+and (min-width: 750px)
+{
 
-    @media only screen 
-    and (max-width: 490px) {
-        .inicio .tit{
-            text-align: center;
-            width: 30em;
-            height: 53.8em;
-        }
-    
-        .fecha h1{
-        font-size: 2.2em;}
-        .foto .gio
-        {
-            
-            width: 22em;
-            height: 30em;
-            margin: -3.2em;
-          
-           
-        }
-        .foto{
-            margin: 0.2em;
-        }
-         
-        }
-    
-@media only screen 
-and (max-width: 420px) {
-
-    .inicio .tit{
-        text-align: center;
-        width: 26em;
-        height: 53.8em;
-    }
-
-    .fecha h1{
-    font-size: 2.2em;
-    
-     
-    }
-    .foto .gio
-        {
-            
-            width: 22em;
-            height: 30em;
-            margin: -3.2em;
-          
-           
-        }
-        .foto{
-            margin: 0.2em;
-        }
-
-  
-    
- 
     .invitacion h2{
-        font-size: 1.5em;
-        line-height: 2.5em;
+  
+          font-size: 3em;
+      
+      }
+
+      .invitacion p{
+       
+        font-size: 3em;
+        
     }
-    .separador{
-        width: 25em;
+    
+    .invitacion .hero__cta{
+    
+        font-size: 1.3em;
+      
+        }
+
+        
+        .asistenciaa .tittle{
+            font-size: 3em;
+            font-family: arial;
+            font-weight: 600;
+        }
+
+        .asistenciaa .info{
+            font-size: 1.7em;
+           
+        }
+
+        .asistenciaa a{
+            font-size: 1.8em;
+           
+        }
+
+        #imagenfinal{
+          
+            margin-top: 95em;
+             
+        }
+
+        .confirmacion{
+            margin-top: 68%;
+            text-align: center;
+        }
+
+        .foto .isa
+        {
+            
+            width: 23em;
+            height: 23em;
+            
+            border-radius: 40em;
+           
+        }
+        .fecha h1{
+            font-size: 5em;}
+        
+    
+}
+@media screen 
+and (min-width: 1001px)
+{
+    .inicio{
+        background: url(../img/Isabella\ Mi\ Primer\ Añito.png) no-repeat;
+        background-size: cover;
     }
+
     #imagenfinal{
-        background-color: #acd9d9;
+          
         margin-top: 80em;
-          height: 40em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 80%;
+        text-align: center;
+    }
+ .tit{
+       
+        opacity: 0;
     }
 }
 
-@media only screen 
-and (max-width: 540px) 
+@media screen 
+and (max-width: 1000px)
 {
-      #map{
+    .inicio{
+        background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
+        background-size:contain;
+    }
+
+
+}
+@media only screen 
+and (max-width: 680px) {
+    .fechaa{
+        margin-top: -10em;
+    }}
+@media only screen 
+and (max-width: 540px) {
+    .fechaa{
+        margin-top: -20em;
+    }
+    #map{
    
         margin: auto;
         height: 31em;
-        width: 20em;    
+        width: 20em;
     
     
       
@@ -423,4 +471,119 @@ and (max-width: 540px)
         transform: var(--transform);
         transition:var(--transition);
     }
+    
+    .fecha h1{
+        font-size: 2.8em;
+    }
+    .invitacion h2{
+        font-size: 2em;
+        line-height: 2.5em;
+    }
+    .separador{
+        width: 25em;
+    }
+}
+@media only screen 
+and (max-width: 800px) {
+   
+    .foto .isa
+    {
+        
+        width: 25em;
+        height: 25em;
+        
+        border-radius: 40em;
+        border: 1px solid rgb(53, 116, 17);
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+    }
+    
+    .invitacion .nube {
+        width: 25em;
+        height: 25em;
+        border-radius: 100em;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    
+    .confirmacion{
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    #imagenfinal img{
+       width: 22em;
+        margin-top: -9em;
+      }
+  
+}
+
+@media only screen 
+and (max-width: 500px) {
+    .fechaa{
+        margin-top: -20em;
+    }}
+
+    @media only screen 
+and (max-width: 480px) {
+
+    .foto .isa
+    {
+        
+       margin-left: -3em;
+       
+    }
+}
+@media only screen 
+and (max-width: 420px) {
+    .fechaa{
+        margin-top: 10em;
+    }
+    
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+    }
+
+    #imagenfinal img{
+       
+      top: -10em;
+    }
+}
+
+@media only screen 
+and (max-width: 420px) {
+   
+    #imagenfinal{
+          
+        margin-top: 100em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+    }
+
+   
 }
