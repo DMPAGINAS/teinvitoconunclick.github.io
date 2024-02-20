@@ -28,7 +28,10 @@ body::-webkit-scrollbar{
 
 
 
-
+ 
+.sugerencias div {
+    text-align: center;
+}
 
 .inicio div{
     text-align: center;
@@ -48,7 +51,13 @@ body::-webkit-scrollbar{
 .fechaa .fecha{
     text-align: center;
 }
-
+.sugerencias div img{
+    width:20em ;
+}
+.sugerencias div p{
+  font-style: italic;
+  font-weight: 100;
+}
 .fecha h1{
     font-size: 3.5em;
     color: white;
@@ -76,7 +85,7 @@ body::-webkit-scrollbar{
     width: 31em;
     height: 30em;
     border-radius: 100em;
-    border: 1px solid rgb(0, 0, 0);
+    
 }
 
 
@@ -335,7 +344,7 @@ body::-webkit-scrollbar{
     
     .separador{
         width: 20em;
-        height: 10em;
+        height: 5em;
     }
 
 @media screen 
@@ -402,6 +411,7 @@ and (min-width: 750px)
         
     
 }
+
 @media screen 
 and (min-width: 1001px)
 {
@@ -417,12 +427,19 @@ and (min-width: 1001px)
     }
 
     .confirmacion{
-        margin-top: 80%;
+       height: 80em;
         text-align: center;
     }
  .tit{
        
         opacity: 0;
+    }
+    .sugerencias div p{
+        font-size: 1.8em;
+    }
+
+    .sugerencias{
+        height: 48em;
     }
 }
 
@@ -434,6 +451,67 @@ and (max-width: 1000px)
         background-size:contain;
     }
 }
+ @media only screen 
+and (max-width: 900px) {
+    .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
+        background-size:cover;
+    
+        height: 100em;}
+        section{
+            width: 140%;
+            height: 100vh;
+        }
+        .fechaa, footer,#imagenfinañ{
+            width: 139%;
+        }  
+        
+    .foto .isa
+    {
+        
+        width: 40em;
+        height: 40em;
+        
+        border-radius: 40em;
+    
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+        height: 130em;
+    }
+    
+    .invitacion .nube {
+        width: 25em;
+        height: 25em;
+        border-radius: 100em;
+       
+    }
+    
+    .confirmacion{
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    #imagenfinal img{
+       width: 22em;
+        margin-top: -9em;
+      }
+  
+}
+
     @media only screen 
 and (max-width: 900px) {
     .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
@@ -455,7 +533,7 @@ and (max-width: 900px) {
         height: 40em;
         
         border-radius: 40em;
-        border: 1px solid rgb(53, 116, 17);
+    
        
     }
     #imagenfinal{
@@ -474,7 +552,7 @@ and (max-width: 900px) {
         width: 25em;
         height: 25em;
         border-radius: 100em;
-        border: 1px solid rgb(0, 0, 0);
+     
     }
     
     .confirmacion{
@@ -516,7 +594,6 @@ and (max-width: 800px) {
         height: 30em;
         
         border-radius: 40em;
-        border: 1px solid rgb(53, 116, 17);
        
     }
     #imagenfinal{
@@ -535,7 +612,7 @@ and (max-width: 800px) {
         width: 25em;
         height: 25em;
         border-radius: 100em;
-        border: 1px solid rgb(0, 0, 0);
+      
     }
     
     .confirmacion{
@@ -555,62 +632,13 @@ and (max-width: 800px) {
       }
   
 }
-}
+
 @media only screen 
 and (max-width: 680px) {
     .fechaa{
         margin-top: -10em;
     }}
-@media only screen 
-and (max-width: 540px) {
-    .fechaa{
-        margin-top: -20em;
-    }
-    #map{
-   
-        margin: auto;
-        height: 31em;
-        width: 20em;
-    
-    
-      
-    }
-    .modal__container{
-        margin: auto;
-        width: 90%;
-        max-width: 35em;
-        max-height: 90%;
-        height: 35em;
-        background-color: #fff;
-        border-radius: 0.5em;
-        padding: 1em;
-        display: grid;
-        gap: 1em;
-        place-items: center;
-        grid-auto-columns: 100%;
-        transform: var(--transform);
-        transition:var(--transition);
-    }
-    
-    .fecha h1{
-        font-size: 2.8em;
-    }
-    .invitacion h2{
-        font-size: 2em;
-        line-height: 2.5em;
-    }
-    .separador{
-        width: 25em;
-    }
-    .foto .isa
-    {
-        
-        width: 15em;
-        height: 15em;
-  
-       
-    }
-}
+
 @media only screen 
 and (max-width: 800px) {
     .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
@@ -632,7 +660,7 @@ and (max-width: 800px) {
         height: 30em;
         
         border-radius: 40em;
-        border: 1px solid rgb(53, 116, 17);
+
        
     }
     #imagenfinal{
@@ -651,7 +679,7 @@ and (max-width: 800px) {
         width: 25em;
         height: 25em;
         border-radius: 100em;
-        border: 1px solid rgb(0, 0, 0);
+   
     }
     
     .confirmacion{
@@ -681,7 +709,7 @@ and (max-width: 750px) {
             width: 140%;
             height: 100vh;
         }
-        .fechaa, footer,#imagenfinañ{
+        .fechaa, footer,#imagenfinal{
             width: 139%;
         }  
         
@@ -692,7 +720,7 @@ and (max-width: 750px) {
         height: 25em;
         
         border-radius: 40em;
-        border: 1px solid rgb(53, 116, 17);
+       
        
     }
     #imagenfinal{
@@ -710,7 +738,7 @@ and (max-width: 750px) {
         width: 25em;
         height: 25em;
         border-radius: 100em;
-        border: 1px solid rgb(0, 0, 0);
+        
     }
     
     .confirmacion{
@@ -750,7 +778,7 @@ and (max-width: 700px) {
         height: 25em;
         
         border-radius: 40em;
-        border: 1px solid rgb(53, 116, 17);
+     
        
     }
     #imagenfinal{
@@ -768,7 +796,7 @@ and (max-width: 700px) {
         width: 25em;
         height: 25em;
         border-radius: 100em;
-        border: 1px solid rgb(0, 0, 0);
+   
     }
     
     .confirmacion{
@@ -793,115 +821,463 @@ and (max-width: 700px) {
 and (max-width: 650px) {
 
         .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
-            background-size:contain;
-            height: 75em;}
+            background-size:cover;
+            width: 80em;
+            height: 130em;}
           
         section{
             width: 140%;
             height: 100vh;}
-        
+        .fechaa{
+            padding-left: 20em;
+            padding-right: 15em;
+        }
         .foto .isa
         {
             
-            width: 25em;
-            height: 25em;
-      
+            width: 30em;
+            height: 30em;
+            margin-left: -2em;
+    
            
-        }.fechaa, footer{
+       
+        }
+        .confirmacion .titulo{
+
+            font-size: 3em;
+        }
+        .confirmacion .mariposa{
+            width: 30em;
+        }
+        .invitacion{
+            height: 90em;
+        }
+        .invitacion{
+            margin-left: 17em;
+        }
+
+        .invitacion h2{
+            font-size: 4em;
+        }
+.invitacion .nube{
+    width: 30em;
+    height: 30em;
+}
+        .invitacion p{
+            font-size: 3em;
+        }
+        .fechaa, footer{
             width: 140%;
         }  
             .confirmacion{
-                height: 70em;
+                height: 140em;
+                margin-left: 18em;
             }
-        
+            .sugerencias {
+            margin-left: -10em;
+            }
+            .sugerencias div img{
+                width: 30em;
+            } .sugerencias div p{
+                font-size: 2em;
+            }
+        #imagenfinal{
+            width: 80em;
+        }
+footer .ti{
+    width: 97em;
+}
+        footer div{
+            width: 78em;
+        }
     }
-
-
     @media only screen 
+    and (max-width: 540px) {
+        .fechaa{
+            margin-top: -20em;
+        }
+        #map{
+       
+            margin: auto;
+            height: 31em;
+            width: 20em;
+        
+        
+          
+        }
+        .modal__container{
+            margin: auto;
+            width: 90%;
+            max-width: 35em;
+            max-height: 90%;
+            height: 35em;
+            background-color: #fff;
+            border-radius: 0.5em;
+            padding: 1em;
+            display: grid;
+            gap: 1em;
+            place-items: center;
+            grid-auto-columns: 100%;
+            transform: var(--transform);
+            transition:var(--transition);
+        }
+        
+     
+    
+        .separador{
+            width: 25em;
+        }
+    }
+    
+@media only screen 
+and (max-width: 500px) {
+    .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
+        background-size:contain;
+        width: 60em;
+        height: 100em;}
+    
+    .fechaa{
+        margin-top: -20em;
+        width: 60em;
+    }
+  
+    .fecha h1{
+        font-size: 2.8em;
+    }
+    .invitacion h2{
+        font-size: 4em;
+        line-height: 2.5em;
+    }
+    .separador{
+        width: 25em;
+    }
+    .foto .isa
+    {
+        
+        width: 30em;
+        height: 30em;
+        margin-left: 12em
+       
+    }
+.asistenciaa, .separador{
+    margin-left:18em;
+} .asistenciaa .tittle{
+    font-size: 3em;
+}
+.sugerencias div img{
+    width: 30em;
+}
+.sugerencias p{
+    font-size: 2.5em;
+}
+.asistenciaa .info{
+    font-size: 2em;
+    width: 30em;
+    margin-left:-9em;
+}
+    #imagenfinal {
+        width: 60em;
+    }
+    footer .ti{width: 73em;
+
+    }
+   footer div{
+width: 58em;
+    }
+    .invitacion p{
+        font-size: 3em;
+    }
+    .invitacion{
+        margin-left: 8em;
+        height: 110em;
+    }
+    .confirmacion{
+        height: 140em;
+    }
+    .confirmacion .mariposa, .titulo{
+        margin-left: 18em;
+    }
+    .confirmacion .titulo{
+        margin-left: 8em;
+    }
+    .confirmacion .mariposa{
+        width: 20em;
+    }
+}
+@media only screen 
 and (max-width: 480px){
     
     .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
-        background-size:contain;
-        height: 68em;}
+        background-size:cover;
+        width: 120em;
+        height: 180em;}
       
     section{
         width: 130%;
         height: 100vh;}
-    
+    .confirmacion .mariposa{
+        width: 30em;
+        margin-left: 42em;
+    }
+    .confirmacion .titulo{
+        font-size: 4em;
+        width: 20em;
+        margin-left: 5em;
+    }
     .foto .isa
     {
         
-        width: 20em;
-        height: 20em;
+        width: 55em;
+        height: 55em;
+        margin-left: 27em;}
   
        
-    }.fechaa, footer{
+    .fechaa, footer{
         width: 130%;
     }  
-        
-    
-}
-@media only screen 
-and (max-width: 380px) {
-    section{
-        width: 120%;
-        height: 100vh;
-    
+    .asistenciaa .info{
+      
+        margin-left: -7em;
     }
-    
-.inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
-    background-size:contain;
-    height: 50em;}
-    
-    .fechaa{
-        width: 120%;
+    .asistenciaa{
+        font-size: 2.3em;
+        width: 30em;
+        margin-top: 30em;
+        margin-left: 10em;
+    }
+    .sugerencias{
+        margin-left: 33em;
+ 
        
-        
+
     }
-    .fechaa h1{
+    .sugerencias div img{ 
+         width: 52em;
+    }
+    .sugerencias p{
+        font-size: 4em;
+    }
+
+    .titulo{
+        margin-left: 6.5em;
+    }
+    .mariposa{
+        margin-left: 12.5em;
+    }
+.fechaa{
+width: 120em;
+height: 60em;
+}
+.fechaa h1{
+    margin-top: 1em;
+    font-size: 8em;
+}
+
+.fechaa img{
+    width: 60em;
+}
+.invitacion h2{
+    font-size: 4em;
+    width: 22em;
+}
+.invitacion img{
+width: 30em;
+margin-left: 29em;
+}
+.invitacion .nube{
+    width: 50em;
+    height: 50em;
+    margin-left: 19em;
+}
+.invitacion p{
+    width: 15em;
+    font-size: 5em;
+    margin-left: 0em;
+    padding: 1em;
+}
+.invitacion .hero__cta
+{   width: 10em;
+    font-size: 4em;
+
+
+}
+.invitacion a{position: absolute;
+   left: 9em;
+}
+.invitacion{
+    height: 160em;
+}
+    .invitacion{
+        margin-left: 15em;
+    }
+    .separador{
+        width: 18em;
+        height: 6em;
+        position: absolute;
+        margin-left:22em;
+        margin-top: 63em;
+    }
+        #imagenfinal{
+            width: 120em;
+            height: 80em;
+        }
+        #imagenfinal img{
+width: 40em;        }
+        #imagenfinal div{
+            margin-top: 6em;
+        }
+        #imagenfinal div p{
+font-size: 4em;
+        }
+        #imagenfinal div h1{
+            padding: 1em;
+            font-size: 4em;
+                    }
+        footer .ti{
+            width: 148em;
+        }
+    footer div{
+        width: 118em;
+    }
+    .confirmacion{
+        height: 330em;
+    }
+}
+    @media only screen 
+    and (max-width: 450px) {
+    
+      
+        .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
+            background-size:cover;
+            width: 95em;
+            height: 130em;}
+            .fechaa{
+                width: 95em;
+                height: 35em;
+            }
+            .fechaa h1{
+                margin-top: 0.5em;
+                font-size: 6em;
+            }
+            .fechaa img{
+                margin-top: -4em;
+              width: 40em;
+            }
+    #imagenfinal{
+        width: 95em;
+        height: 80em;
+    }
+    .invitacion h2{
+        font-size: 3em;
+        margin-left: -5em;
+    }
+    .invitacion p{
+    
+        font-size: 3em;
+        margin-left: -2em;
+    
+    }
+    .invitacion .nube{
+        width: 35em;
+        height: 35em;
+        margin-left: 0em;
+    }
+    
+    .invitacion img{
+        width: 25em;
+        margin-left: 0em;
+    }
+    
+    .invitacion .hero__cta{
+    
         font-size: 2em;
     }
-
-    .invitacion h2{
-        font-size: 1.8em;
+    .invitacion{
+        height: 120em;
+        margin-left: 26em;
     }
-    footer{
-        width: 120%;
-  
+
+    .invitacion .hero__cta {margin-left: 10em;}
+    .confirmacion{
+        height: 195em;
+      
+    }
+    
+    #imagenfinal div{
+    margin-top: 10em;
+    }
+    #imagenfinal div p{
+        font-size: 3em;
+    }#imagenfinal div h1{
+        font-size: 3em;
+    }
+    .confirmacion .titulo {
+        font-size: 4em;
+        width: 15em;
+        margin-left: 3.5em;
+    }
+    
+    .confirmacion .mariposa {
+       width: 20em;
+        margin-left: 35em;
     
     }
-    .foto .isa
+    .foto .isa{
+        width: 40em;
+        height: 40em;
+        margin-left: 21em;
+    }
+    
+    #imagenfinal img{
+        width: 30em;
+    }
+    footer .ti{
+        width: 117em;
+    }
+    footer div{
+        width: 93em;
+    }
+    .tittle p{
+        font-size: 2em;
+    }
+    .asistenciaa .tittle{
+width: 20em;
+margin-left: -6em;
+    }
+    .asistenciaa
+        {
+         font-size: 1.5em;
+        margin-top: 13em;
+           margin-left: 20em;
+           width: 20em;
+        }
+    .separador {position:absolute;
+        width: 22em;
+        height: 5;
+    margin-top: 16em;
+    margin-left: 16em;
+    }
+    .sugerencias
     {
-        
-        width: 15em;
-        height: 15em;
-  
-  
+        margin-left: 21em;
        
     }
-
-    .invitacion .nube {
-        width: 18em;
-        height: 18em;
-  
+    .sugerencias p{
+        font-size: 2.5em;
     }
-
-    .separador{
-        width: 15em;
-        height: 5em;
+    .sugerencias div img{
+        width: 35em;
     }
-    #imagenfinal img{
-       width: 15em;
-        top: -10em;
-      }
-}
-
-@media only screen 
+    }
+   
+    @media only screen 
 and (max-width: 420px) {
     .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
         background-size:contain;
         height: 55em;}
-      
+        #imagenfinal{
+            height: 50em;
+        }
     section{
         width: 110%;
         height: 100vh;
@@ -931,7 +1307,7 @@ and (max-width: 420px) {
     }
 
     .confirmacion{
-      height: 40em;
+      height: 60em;
         text-align: center;
     }
 
@@ -941,19 +1317,244 @@ and (max-width: 420px) {
     }
 }
 
-@media only screen 
-and (max-width: 420px) {
-   
-    #imagenfinal{
-          
-        margin-top: 100em;
+
+    @media only screen 
+    and (max-width: 420px) {
+        .inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
+            background-size:cover;
+            width: 40em;
+            height: 55em;}
+        .invitacion{
+            height: 101em;
+        }
+        
+    .fechaa{
+        margin-top: -1em;
+        width: 40em;
+    }
+        .invitacion .nube{
+            width: 18em;
+            height:18em;
+        }
+        .titulo{
+            margin-left: 6em;
+        }
+     .mariposa{
+        margin-left: 12em;
+    }
+        .fechaa{
+            padding-bottom: -1em;
+        }
+       .foto .isa{
+        margin-left: 4.5em;
+       }
+    
+       .invitacion{
+        margin-left: 6em;
+       }
+        #imagenfinal{
+            height: 50em;
+            margin-top: 100em;
+             
+        }
+        .sugerencias {
+            position:relative;
+            margin-top: -5em;
+            margin-left: 4em;
+        }
+        .confirmacion{
+            height: 70em;
+        }
+        .asistenciaa
+        {
          
+        margin-top: -18em;
+           margin-left: 10em;
+           width: 20em;
+        }
+    .separador {position:absolute;
+        width: 15em;
+        height: 1;
+    margin-top: -20em;
+    margin-left: -2em;}
+        .confirmacion{
+            position: relative;
+            margin-top: -20em;
+     
+            text-align: center;
+        }
+    
+        footer .ti{
+            width: 49em;
+        }
+    footer div{
+        width: 38em;
+    }
+       #imagenfinal{
+        width: 40em;
+       }
+    }
+    
+    @media only screen 
+    and (max-width: 400px) {
+    
+        .asistenciaa
+        {
+         
+        margin-top: -10em;
+           margin-left: 9em;
+           width: 20em;
+        }
+    .separador {position:absolute;
+        width: 15em;
+        height: 1;
+    margin-top: -12em;
+    margin-left: -2em;}
     }
 
-    .confirmacion{
-        margin-top: 180%;
-        text-align: center;
+
+    @media only screen 
+and (max-width: 380px) {
+  
+    section{
+   
+        height: 100vh;
+    
     }
+    
+.inicio{   background: url(../img/Invitacion\ para\ cumpleaños\ niño\ animalitos\ bosque\ verde.png) no-repeat;
+    background-size:cover;
+    height: 60em;
+width: 128%;}
+    
+.fechaa{
+
+    width: 170%;
+   padding-left: 1em;
+   padding-right: 2.3em;
+
+}
+    .fechaa h1{
+        font-size: 2em;
+    }
+
+    .invitacion h2{
+        font-size: 1.8em;
+    }
+  #imagenfinal{
+     top: 100em;
+       width: 23.9em;
+  
+    
+    }
+    footer .ti {
+        width: 28.9em;
+    }
+    footer div{
+        width: 21.9em;
+    }
+  
+    .foto .isa
+    {
+        
+        width: 15em;
+        height: 15em;
+  
+  
+       
+    }
+    
+    .invitacion{
+        margin-left: 1.3em;
+    }
+    .confirmacion{
+       height: 2em;
+       margin-left: 1.5em;
+    }
+    .confirmacion p{
+        font-size: 1em;
+    }
+    .confirmacion .tittle{
+        font-size: 1.5em;
+    }
+    .confirmacion a{
+       font-size: 1em;
+    }
+    .sugerencias p{
+        width: 10em;
+        margin-left: 8em;
+    }
+    .sugerencias{
+        width: 120%;
+        height: 20em;
+    }
+.sugerencias{
+    margin-left: -2.5em;
+}
+    .sugerencias div img{
+        width: 15em;
+      
+    }
+
+    .sugerencias{
+        height: 32em;
+    }
+
+    .invitacion .nube {
+        width: 18em;
+        height: 18em;
+  
+    }
+.confirmacion{
+    height: 90em;
+}
+    .separador{
+        width: 10em;
+        height: 2em;
+    }
+    #imagenfinal img{
+       width: 15em;
+        top: -10em;
+      }
+
+
+
+    }
+    @media only screen 
+    and (max-width: 350px) {
+        #imagenfinal{
+         
+            width: 27.8em;
+        }
+        footer .ti{
+            width: 33.5em;
+        }
+        footer div{
+            width: 25.8em;
+        }
+        .confirmacion{
+            margin-left: 2em;
+            
+        }
+.fechaa{
+    padding-left: 1.8em;
+}
+        .sugerencias p{
+            margin-left: 9em;
+        }
+
+        .invitacion{
+            margin-left: 2em;
+        }
+
+        .foto .isa  {
+            width: 20em;
+            height: 20em;
+            margin-left: -1em;
+        }
+    }
+
+
+
 
    
-}
