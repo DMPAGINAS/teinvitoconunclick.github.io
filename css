@@ -1,0 +1,2617 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    flex-wrap: wrap;
+}
+
+.movil{
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ 
+section{
+    width: 100%;
+    height: 100vh;
+
+}
+ 
+body::-webkit-scrollbar{
+
+  width: 0;
+  height: 0;
+ 
+
+}
+
+
+.inicio .tit{
+    text-align: center;
+    width: 39em;
+    height: 53.8em;
+}
+
+
+.fechaa{
+    width: 100%;
+    height: 18em;
+    background-color: rgb(252, 188, 246);
+}
+
+.fechaa img{
+    margin-top: -8em;
+    width: 20em;
+}
+.fechaa .fecha{
+    text-align: center;
+}
+
+.fecha h1{
+    font-size: 3em;
+    color: white;
+    font-weight:900 ;
+    color: rgb(255, 255, 255);
+    font-size: 3.5em;
+    color: white;
+  font-style: italic;
+    font-weight:100;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+
+}
+
+
+
+.invitacion div{
+    text-align: center;
+}
+
+.invitacion .osito{
+    width: 23em;
+}
+
+.invitacion .ubic{
+    width: 20em;
+ 
+}
+
+.invitacion h2{
+  text-indent: 3vh;
+  line-height: 10vh;
+
+    word-spacing: 1vh;
+    font-size: 2em;
+    font-style: italic;
+    font-weight:100;
+}
+
+#fondo {
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 35em;
+    max-height: 90%;
+    height: 35em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__close{
+    position: absolute;
+    margin-top: -34em;
+    margin-left:92%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26250;
+    padding: 0.5em;
+    border: 0.1em solid ;
+    border-radius: 0.5em;
+    display: inline-block;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+
+.modal__close:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
+
+
+#map{
+   
+    margin: auto;
+    height: 31em;
+    width: 31em;
+
+
+  
+}
+
+
+.invitacion p{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1.5vh;
+    margin-top: -2em;
+}
+
+.invitacion .hero__cta{
+
+    font-size: 1em;
+    text-decoration: none;
+    list-style: none;
+    
+    border-radius: 2em;
+    padding: 1em;
+    color: white;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 700;
+    transition: 0.3s ease;
+    }
+
+    .invitacion .hero__cta:hover{
+        background-color:rgb(42, 41, 41);
+    }    
+    .confirmacion .auto{
+        width: 18em;
+    
+    }
+    .confirmacion{
+        margin-top: 55em;
+        text-align: center;
+    }
+
+    .confirmacion .titulo{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        word-spacing: 0.2em;
+        font-size: 2em;
+    }
+
+    .caja .foto{
+        display: inline-flex;
+        }
+        .foto .gio
+        {
+            
+            width: 50em;
+            height: 50em;
+            
+          
+           
+        }
+        .foto{
+            margin: -3em;
+        }
+
+        .asistenciaa .tittle{
+            font-size: 2em;
+            font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+        }
+
+        .asistenciaa .info{
+            font-size: 1.3em;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 100;
+            color: rgb(28, 28, 28);
+            letter-spacing: 0.1em;
+            word-spacing:0.2em ;
+        }
+
+        .asistenciaa a{
+            font-size: 1.3em;
+            background-color:black;
+            color: white;
+            text-decoration: none;
+            
+            border-radius: 15em;
+            padding: 0.5em;
+            font-weight: 700;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            transition: 0.3s ease;
+        }
+        
+        .asistenciaa a:hover{
+            background-color:rgb(42, 41, 41);
+        }
+
+        #imagenfinal{
+            background-color: rgb(252, 188, 246);
+            margin-top: 96em;
+              height: 40em;
+        }
+    
+        
+#imagenfinal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    word-spacing: 0em;
+    line-height: 2.5em;
+
+   
+}
+
+#imagenfinal p{
+    font-weight: 100;
+    font-size:1.5em;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+    #imagenfinal h1{
+        font-style: italic;
+       font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        font-size: 1.7em;
+     
+    }
+    
+    #imagenfinal img{
+        width: 15em;
+    }
+
+    footer .ti{
+        background-color: rgb(235, 229, 229);
+        text-align: center;
+       padding: 0.5em;
+        font-family: arial;
+        font-weight: 100;
+      font-size: 0.8em;
+      color: black;
+    }
+
+    .ti a{
+        text-decoration: none;
+        color: rgb(165, 165, 165);
+        transition: 0.3s ease;
+    }
+
+    .ti a:hover{
+        color: rgb(121, 121, 121);
+    }
+    
+    footer .derechos{
+        padding: 1em;
+        background-color: rgb(202, 199, 199);
+        text-align: center;
+        font-family: sans-serif;
+        color: rgb(85, 84, 84);
+    }
+    
+    .derechos a{
+        text-decoration: none;
+        color: rgb(85, 84, 84);
+    }
+    
+    .separador{
+        width: 40em;
+    }
+    @media only screen 
+    and (min-width: 701px) {
+        section,footer{
+            display: none;
+        }
+
+        .movil{
+            display: block;
+            text-align: center;
+            font-weight: 900;
+            font-family: sans-serif;
+            margin: 6em;
+            font-size: 3em;
+        }
+    }
+    @media only screen 
+    and (max-width: 700px) {
+        .inicio .tit{
+            text-align: center;
+            width: 43em;
+            height: 53.8em;
+        }
+.invitacion{
+    height: 30em;
+}
+        
+        .fecha h1{
+            font-size: 2.3em;}
+            .fechaa img{
+                margin: -5em;
+                width: 15em;
+            }
+            .foto .gio
+        {
+            
+            
+            width: 35em;
+            height: 35em;
+            margin: -2em;
+          
+           
+        }
+        #imagenfinal{
+            margin-top: 170em;
+              
+        }   
+        #imagenfinal img{
+            width: 25em;
+        }
+        .separador{
+            width: 23em;
+        }
+    }
+
+
+
+    @media only screen 
+    and (max-width: 650px) {
+        .inicio .tit{
+            text-align: center;
+            width: 41em;
+            height: 53.8em;
+        }
+.invitacion{
+    height: 30em;
+}
+        
+        .fecha h1{
+            font-size: 2em;}
+            .fechaa img{
+                margin: -5em;
+                width: 15em;
+            }
+            .foto .gio
+        {
+            
+            
+            width: 31em;
+            height: 31em;
+            margin: -2em;
+          
+           
+        }
+        #imagenfinal{
+            margin-top: 145em;
+              
+        }   
+        #imagenfinal img{
+            width: 25em;
+        }
+        .separador{
+            width: 23em;
+        }
+    }
+ 
+    @media only screen 
+    and (max-width: 620px) {
+        .inicio .tit{
+            text-align: center;
+            width: 38.5em;
+            height: 53.8em;
+        }
+.invitacion{
+    height: 30em;
+}
+        
+        .fecha h1{
+            font-size: 2em;}
+            .fechaa img{
+                margin: -5em;
+                width: 15em;
+            }
+            .foto .gio
+        {
+            
+            
+            width: 31em;
+            height: 31em;
+            margin: -2em;
+          
+           
+        }
+        #imagenfinal{
+            margin-top: 145em;
+              
+        }   
+        #imagenfinal img{
+            width: 25em;
+        }
+        .separador{
+            width: 23em;
+        }
+    }
+    @media only screen 
+    and (max-width: 600px) {
+        .inicio .tit{
+            text-align: center;
+            width: 37.5em;
+            height: 53.8em;
+        }
+.invitacion{
+    height: 30em;
+}
+        
+        .fecha h1{
+            font-size: 2em;}
+            .fechaa img{
+                margin: -5em;
+                width: 15em;
+            }
+            .foto .gio
+        {
+            
+            
+            width: 29em;
+            height: 29em;
+            margin: -2em;
+          
+           
+        }
+        #imagenfinal{
+            margin-top: 140em;
+              
+        }   
+        #imagenfinal img{
+            width: 25em;
+        }
+        .separador{
+            width: 23em;
+        }
+    }
+    @media only screen 
+    and (max-width: 550px) {
+        .inicio .tit{
+            text-align: center;
+            width: 33.3em;
+            height: 53.8em;
+        }
+.invitacion{
+    height: 30em;
+}
+        
+        .fecha h1{
+            font-size: 2em;}
+            .fechaa img{
+                margin: -5em;
+                width: 15em;
+            }
+            .foto .gio
+        {
+            
+            
+            width: 29em;
+            height: 29em;
+            margin: -2em;
+          
+           
+        }
+        #imagenfinal{
+            margin-top: 140em;
+              
+        }   
+        #imagenfinal img{
+            width: 25em;
+        }
+        .separador{
+            width: 23em;
+        }
+    }
+    @media only screen 
+    and (max-width: 520px) {
+        .inicio .tit{
+            text-align: center;
+            width: 31.5em;
+            height: 53.8em;
+        }
+.invitacion{
+    height: 30em;
+}
+        
+        .fecha h1{
+            font-size: 2em;}
+            .fechaa img{
+                margin: -5em;
+                width: 15em;
+            }
+            .foto .gio
+        {
+            
+            
+            width: 29em;
+            height: 29em;
+            margin: -2em;
+          
+           
+        }
+        #imagenfinal{
+            margin-top: 140em;
+              
+        }   
+        #imagenfinal img{
+            width: 25em;
+        }
+        .separador{
+            width: 23em;
+        }
+    }
+
+    @media only screen 
+    and (max-width: 490px) {
+        .invitacion{
+            height: 30em;
+        }
+        .inicio .tit{
+            text-align: center;
+            width: 30.5em;
+            height: 53.8em;
+        }
+    
+        .fecha h1{
+        font-size: 2.2em;}
+        .foto .gio
+        {
+            
+            
+            width: 29em;
+            height: 29em;
+            margin: -3.2em;
+          
+           
+        }
+        .separador{
+            width: 16em;
+        }
+        .foto{
+            margin: 0.2em;
+        }
+      
+        #imagenfinal{
+            margin-top: 140em;
+              
+        }   
+        #imagenfinal img{
+            width: 25em;
+        }
+        }
+        @media only screen 
+        and (max-width: 450px) {
+            .inicio .tit{
+                text-align: center;
+                width: 28em;
+                height: 53.8em;
+            }
+            iframe{
+                width:25em;
+            }
+        }
+@media only screen 
+and (max-width: 420px) {
+
+    .inicio .tit{
+        text-align: center;
+        width: 26em;
+        height: 53.8em;
+    }
+
+    .fecha h1{
+    font-size: 2.2em;
+    
+     
+    }
+    .foto .gio
+        {
+            
+            width: 25em;
+            height: 25em;
+            margin: -3.2em;
+          
+           
+        }
+        .foto{
+            margin: 0.2em;
+        }
+
+  
+    iframe{
+        width:23em;
+    }
+ 
+    .invitacion h2{
+        font-size: 1.5em;
+        line-height: 2.5em;
+    }
+    .separador{
+        width: 25em;
+    }
+    #imagenfinal{
+        margin-top: 135em;
+          height: 40em;
+    }
+ 
+}
+@media only screen 
+and (max-width: 350px) {
+    .inicio .tit{
+        text-align: center;
+        width: 22em;
+        height: 53.8em;
+    }
+    .foto .gio
+    {
+        
+        width: 20em;
+        height: 20em;
+        margin: -3.2em;
+      
+       
+    }
+    .invitacion{
+        height: 10em;
+    }
+    .invitacion .osito{
+        width: 10em;
+    }
+    .invitacion .ubic{
+        width: 15em;
+        height: 15em;
+    }
+    .foto{
+        margin: 0.2em;
+    }
+    .separador{
+        width: 20em;
+    }
+    #imagenfinal{
+        margin-top: 115em;
+          height: 40em;
+    }
+
+    #imagenfinal img{
+        width: 18em;
+    }
+}
+
+@media only screen 
+and (max-width: 540px) 
+{
+      #map{
+   
+        margin: auto;
+        height: 31em;
+        width: 20em;    
+    
+    
+      
+    }
+    .modal__container{
+        margin: auto;
+        width: 90%;
+        max-width: 35em;
+        max-height: 90%;
+        height: 35em;
+        background-color: #fff;
+        border-radius: 0.5em;
+        padding: 1em;
+        display: grid;
+        gap: 1em;
+        place-items: center;
+        grid-auto-columns: 100%;
+        transform: var(--transform);
+        transition:var(--transition);
+    }
+}
+/*{
+    padding: 0;
+    margin: 0;
+    
+    flex-wrap: wrap;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+ 
+section{
+    width: 100%;
+    height: 100vh;
+
+}
+ 
+body::-webkit-scrollbar{
+
+  width: 0;
+  height: 0;
+ 
+
+}
+
+
+
+ 
+.sugerencias div {
+    text-align: center;
+}
+
+.inicio div{
+    text-align: center;
+}
+
+.tit{
+    width: 25em;
+
+    margin-top: 27em;
+}
+.fechaa{
+    width: 100%;
+    height: 20em;
+    background-color: #f8bbe2;
+}
+
+.fechaa .fecha{
+    text-align: center;
+}
+.sugerencias div img{
+    width:20em ;
+}
+.sugerencias div p{
+  font-style: italic;
+  font-weight: 100;
+}
+.fecha h1{
+    font-size: 3.5em;
+    color: white;
+  font-style: italic;
+    font-weight:100;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+}
+
+.fecha img{
+    width: 23em;
+    position: relative;
+    top: -8em;
+}
+
+.invitacion div{
+    text-align: center;
+}
+
+.invitacion img{
+    width: 18em;
+}
+
+.invitacion .nube {
+    width: 31em;
+    height: 30em;
+    border-radius: 100em;
+    
+}
+
+
+.invitacion h2{
+  text-indent: 3vh;
+  line-height: 10vh;
+    letter-spacing: 1vh;
+    word-spacing: 1vh;
+    font-size: 2em;
+    font-weight:100 ;
+}
+
+#fondo {
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+}
+
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+
+.modal__container{
+    margin: auto;
+    width: 90%;
+    max-width: 35em;
+    max-height: 90%;
+    height: 35em;
+    background-color: #fff;
+    border-radius: 0.5em;
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition:var(--transition);
+}
+
+.modal__close{
+
+    margin-top: -34em;
+    margin-left:92%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #F26250;
+    padding: 0.5em;
+    border: 0.1em solid ;
+    border-radius: 0.5em;
+    display: inline-block;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+
+.modal__close:hover{
+    color: #F26250;
+    background-color: #fff;
+}
+
+
+
+#map{
+   
+    margin: auto;
+    height: 31em;
+    width: 31em;
+
+
+  
+}
+
+
+
+.invitacion p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1.5vh;
+}
+
+.invitacion .hero__cta{
+
+    font-size: 1em;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    border-radius: 2em;
+    padding: 1em;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    transition: 0.3s ease;
+    }
+
+    .invitacion .hero__cta:hover{
+        background-color:rgb(42, 41, 41);
+    }    
+    .confirmacion .mariposa{
+        width: 12em;
+    
+    }
+    .confirmacion{
+        margin-top: 85%;
+        text-align: center;
+    }
+
+    .confirmacion .titulo{
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        word-spacing: 0.2em;
+        font-size: 2em;
+    }
+
+    .caja .foto{
+        display: inline-flex;
+        }
+        .foto .isa
+        {
+            
+            width: 35em;
+            height: 35em;
+            
+            border-radius: 40em;
+           
+        }
+        .foto{
+            margin: 3em;
+        }
+
+        .asistenciaa .tittle{
+            font-size: 2em;
+            font-family: arial;
+            font-weight: 600;
+        }
+
+        .asistenciaa .info{
+            font-size: 1.3em;
+            font-family: arial;
+            font-weight: 100;
+            color: rgb(28, 28, 28);
+            letter-spacing: 0.1em;
+            word-spacing:0.2em ;
+        }
+
+        .asistenciaa a{
+            font-size: 1.3em;
+            background-color:black;
+            color: white;
+            text-decoration: none;
+            
+            border-radius: 15em;
+            padding: 0.5em;
+            font-weight: 700;
+            font-family: arial;
+            transition: 0.3s ease;
+        }
+        
+        .asistenciaa a:hover{
+            background-color:rgb(42, 41, 41);
+        }
+
+        #imagenfinal{
+            background-color: #a9de9e;
+            margin-top: 105em;
+              height: 40em;
+        }
+    
+        
+#imagenfinal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2em;
+    word-spacing: 0em;
+    line-height: 2.5em;
+
+   
+}
+
+#imagenfinal p{
+    font-weight: 100;
+    font-size:1.5em;
+    }
+    
+    #imagenfinal h1{
+        font-weight: 900;
+        font-size: 1.7em;
+        font-style: oblique;
+    }
+    
+    #imagenfinal img{
+        width: 20em;
+        margin-top: -8em;
+    }
+
+    footer .ti{
+        background-color: rgb(235, 229, 229);
+        text-align: center;
+       padding: 0.5em;
+        font-family: arial;
+        font-weight: 100;
+      font-size: 0.8em;
+      color: black;
+    }
+
+    .ti a{
+        text-decoration: none;
+        color: rgb(165, 165, 165);
+        transition: 0.3s ease;
+    }
+
+    .ti a:hover{
+        color: rgb(121, 121, 121);
+    }
+    
+    footer .derechos{
+        padding: 1em;
+        background-color: rgb(202, 199, 199);
+        text-align: center;
+        font-family: sans-serif;
+        color: rgb(85, 84, 84);
+    }
+    
+    .derechos a{
+        text-decoration: none;
+        color: rgb(85, 84, 84);
+    }
+    
+    .separador{
+        width: 20em;
+        height: 5em;
+    }
+
+@media screen 
+and (min-width: 750px)
+{
+
+    .invitacion h2{
+  
+          font-size: 3em;
+      
+      }
+
+      .invitacion p{
+       
+        font-size: 3em;
+        
+    }
+    
+    .invitacion .hero__cta{
+    
+        font-size: 1.3em;
+      
+        }
+
+        
+        .asistenciaa .tittle{
+            font-size: 3em;
+            font-family: arial;
+            font-weight: 600;
+        }
+
+        .asistenciaa .info{
+            font-size: 1.7em;
+           
+        }
+
+        .asistenciaa a{
+            font-size: 1.8em;
+           
+        }
+
+        #imagenfinal{
+          
+            margin-top: 95em;
+             
+        }
+
+        .confirmacion{
+            margin-top: 68%;
+            text-align: center;
+        }
+
+        .foto .isa
+        {
+            
+            width: 23em;
+            height: 23em;
+            
+            border-radius: 40em;
+           
+        }
+        .fecha h1{
+            font-size: 5em;}
+        
+    
+}
+
+@media screen 
+and (min-width: 1001px)
+{
+    .inicio{
+        background: url(../img/Crema\ Marrón\ Fotográfico\ Belleza\ Plataforma\ Lanzamiento\ Sitio\ Web.png) no-repeat;
+        background-size: cover;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    .confirmacion{
+       height: 80em;
+        text-align: center;
+    }
+ .tit{
+       
+        opacity: 0;
+    }
+    .sugerencias div p{
+        font-size: 1.8em;
+    }
+
+    .sugerencias{
+        height: 48em;
+    }
+}
+
+@media screen 
+and (max-width: 1000px)
+{
+    .inicio{
+        background: url(../img/grettacelular.png) no-repeat;
+        background-size:contain;
+    }
+}
+ @media only screen 
+and (max-width: 900px) {
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:cover;
+    
+        height: 100em;}
+        section{
+            width: 140%;
+            height: 100vh;
+        }
+        .fechaa, footer,#imagenfinañ{
+            width: 139%;
+        }  
+        
+    .foto .isa
+    {
+        
+        width: 40em;
+        height: 40em;
+        
+        border-radius: 40em;
+    
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+        height: 130em;
+    }
+    
+    .invitacion .nube {
+        width: 25em;
+        height: 25em;
+        border-radius: 100em;
+       
+    }
+    
+    .confirmacion{
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    #imagenfinal img{
+       width: 22em;
+        margin-top: -9em;
+      }
+  
+}
+
+    @media only screen 
+and (max-width: 900px) {
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:cover;
+    
+        height: 100em;}
+        section{
+            width: 140%;
+            height: 100vh;
+        }
+        .fechaa, footer,#imagenfinañ{
+            width: 139%;
+        }  
+        
+    .foto .isa
+    {
+        
+        width: 40em;
+        height: 40em;
+        
+        border-radius: 40em;
+    
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+        height: 130em;
+    }
+    
+    .invitacion .nube {
+        width: 25em;
+        height: 25em;
+        border-radius: 100em;
+     
+    }
+    
+    .confirmacion{
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    #imagenfinal img{
+       width: 22em;
+        margin-top: -9em;
+      }
+  
+}
+
+@media only screen 
+and (max-width: 800px) {
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:cover;
+    
+        height: 85em;}
+        section{
+            width: 140%;
+            height: 100vh;
+        }
+        .fechaa, footer,#imagenfinañ{
+            width: 139%;
+        }  
+        
+    .foto .isa
+    {
+        
+        width: 30em;
+        height: 30em;
+        
+        border-radius: 40em;
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+        height: 100em;
+    }
+    
+    .invitacion .nube {
+        width: 25em;
+        height: 25em;
+        border-radius: 100em;
+      
+    }
+    
+    .confirmacion{
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    #imagenfinal img{
+       width: 22em;
+        margin-top: -9em;
+      }
+  
+}
+
+@media only screen 
+and (max-width: 680px) {
+    .fechaa{
+        margin-top: -10em;
+    }}
+
+@media only screen 
+and (max-width: 800px) {
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:cover;
+    
+        height: 85em;}
+        section{
+            width: 140%;
+            height: 100vh;
+        }
+        .fechaa, footer,#imagenfinañ{
+            width: 139%;
+        }  
+        
+    .foto .isa
+    {
+        
+        width: 30em;
+        height: 30em;
+        
+        border-radius: 40em;
+
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+        height: 100em;
+    }
+    
+    .invitacion .nube {
+        width: 25em;
+        height: 25em;
+        border-radius: 100em;
+   
+    }
+    
+    .confirmacion{
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    #imagenfinal img{
+       width: 22em;
+        margin-top: -9em;
+      }
+  
+}
+@media only screen 
+and (max-width: 750px) {
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:cover;
+    
+        height: 85em;}
+        section{
+            width: 140%;
+            height: 100vh;
+        }
+        .fechaa, footer,#imagenfinal{
+            width: 139%;
+        }  
+        
+    .foto .isa
+    {
+        
+        width: 25em;
+        height: 25em;
+        
+        border-radius: 40em;
+       
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+    }
+    
+    .invitacion .nube {
+        width: 25em;
+        height: 25em;
+        border-radius: 100em;
+        
+    }
+    
+    .confirmacion{
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    #imagenfinal img{
+       width: 22em;
+        margin-top: -9em;
+      }
+  
+}
+@media only screen 
+and (max-width: 700px) {
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:contain;
+        height: 85em;}
+        section{
+            width: 140%;
+            height: 100vh;
+        }
+        .fechaa, footer{
+            width: 140%;
+        }  
+        
+    .foto .isa
+    {
+        
+        width: 25em;
+        height: 25em;
+        
+        border-radius: 40em;
+     
+       
+    }
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+        margin-top: 180%;
+        text-align: center;
+    }
+    
+    .invitacion .nube {
+        width: 25em;
+        height: 25em;
+        border-radius: 100em;
+   
+    }
+    
+    .confirmacion{
+        margin-top: 100%;
+        text-align: center;
+    }
+
+    #imagenfinal{
+          
+        margin-top: 80em;
+         
+    }
+
+    #imagenfinal img{
+       width: 22em;
+        margin-top: -9em;
+      }
+  
+}
+
+@media only screen 
+and (max-width: 650px) {
+
+        .inicio{   background: url(../img/grettacelular.png) no-repeat;
+            background-size:cover;
+            width: 80em;
+            height: 130em;}
+          
+        section{
+            width: 140%;
+            height: 100vh;}
+        .fechaa{
+            padding-left: 20em;
+            padding-right: 15em;
+        }
+        .foto .isa
+        {
+            
+            width: 30em;
+            height: 30em;
+            margin-left: -2em;
+    
+           
+       
+        }
+        .confirmacion .titulo{
+
+            font-size: 3em;
+        }
+        .confirmacion .mariposa{
+            width: 30em;
+        }
+        .invitacion{
+            height: 90em;
+        }
+        .invitacion{
+            margin-left: 17em;
+        }
+
+        .invitacion h2{
+            font-size: 4em;
+        }
+.invitacion .nube{
+    width: 30em;
+    height: 30em;
+}
+        .invitacion p{
+            font-size: 3em;
+        }
+        .fechaa, footer{
+            width: 140%;
+        }  
+            .confirmacion{
+                height: 140em;
+                margin-left: 18em;
+            }
+            .sugerencias {
+            margin-left: -10em;
+            }
+            .sugerencias div img{
+                width: 30em;
+            } .sugerencias div p{
+                font-size: 2em;
+            }
+        #imagenfinal{
+            width: 80em;
+        }
+footer .ti{
+    width: 97em;
+}
+        footer div{
+            width: 78em;
+        }
+    }
+/*    @media only screen 
+    and (max-width: 540px) {
+        .fechaa{
+            margin-top: -20em;
+        }
+        #map{
+       
+            margin: auto;
+            height: 31em;
+            width: 20em;
+        
+        
+          
+        }
+        .modal__container{
+            margin: auto;
+            width: 90%;
+            max-width: 35em;
+            max-height: 90%;
+            height: 35em;
+            background-color: #fff;
+            border-radius: 0.5em;
+            padding: 1em;
+            display: grid;
+            gap: 1em;
+            place-items: center;
+            grid-auto-columns: 100%;
+            transform: var(--transform);
+            transition:var(--transition);
+        }
+        
+     
+    
+        .separador{
+            width: 25em;
+        }
+    }
+  ----
+@media only screen 
+and (max-width: 500px) {
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:contain;
+        width: 60em;
+        height: 100em;}
+    
+    .fechaa{
+        margin-top: -20em;
+        width: 60em;
+    }
+  
+    .fecha h1{
+        font-size: 2.8em;
+    }
+    .invitacion h2{
+        font-size: 4em;
+        line-height: 2.5em;
+    }
+    .separador{
+        width: 25em;
+    }
+    .foto .isa
+    {
+        
+        width: 30em;
+        height: 30em;
+        margin-left: 12em
+       
+    }
+.asistenciaa, .separador{
+    margin-left:18em;
+} .asistenciaa .tittle{
+    font-size: 3em;
+}
+.sugerencias div img{
+    width: 30em;
+}
+.sugerencias p{
+    font-size: 2.5em;
+}
+.asistenciaa .info{
+    font-size: 2em;
+    width: 30em;
+    margin-left:-9em;
+}
+    #imagenfinal {
+        width: 60em;
+    }
+    footer .ti{width: 73em;
+
+    }
+   footer div{
+width: 58em;
+    }
+    .invitacion p{
+        font-size: 3em;
+    }
+    .invitacion{
+        margin-left: 8em;
+        height: 110em;
+    }
+    .confirmacion{
+        height: 140em;
+    }
+    .confirmacion .mariposa, .titulo{
+        margin-left: 18em;
+    }
+    .confirmacion .titulo{
+        margin-left: 8em;
+    }
+    .confirmacion .mariposa{
+        width: 20em;
+    }
+}
+@media only screen 
+and (max-width: 480px){
+   
+
+
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:cover;
+        width: 120em;
+        height: 180em;}
+      
+    section{
+        width: 130%;
+        height: 100vh;}
+    .confirmacion .mariposa{
+        width: 30em;
+        margin-left: 26em;
+    }
+    .confirmacion .titulo{
+        font-size: 4em;
+        width: 20em;
+        margin-left: 1em;
+    }
+    .foto .isa
+    {
+        
+        width: 55em;
+        height: 55em;
+        margin-left: 10em;}
+  
+       
+    .fechaa, footer{
+        width: 130%;
+    }  
+    .asistenciaa .info{
+      
+        margin-left: -11em;
+    }
+
+    .asistenciaa a{
+        margin-left: -10em;
+    }
+    .asistenciaa{
+        font-size: 2.3em;
+        width: 30em;
+        margin-top: 30em;
+        margin-left: 10em;
+    }
+    .asistenciaa .tittle{
+        font-size: 2.5em;
+        margin-left: -5.9em;
+    }
+    .sugerencias{
+        margin-left: 26em;
+ 
+       
+
+    }
+    .sugerencias div img{ 
+         width: 52em;
+         margin-left: -16em;
+    }
+    .sugerencias div p{
+        font-size: 4em;
+        margin-left: -4em;
+    }
+
+    .titulo{
+        margin-left: 6.5em;
+    }
+    .mariposa{
+        margin-left: 12.5em;
+    }
+.fechaa{
+width: 85em;
+height: 60em;
+}
+.fechaa h1{
+    margin-top: 1em;
+    font-size: 8em;
+}
+
+.fechaa img{
+    width: 60em;
+}
+.invitacion h2{
+    font-size: 4em;
+    width: 22em;
+}
+.invitacion img{
+width: 30em;
+margin-left: 29em;
+}
+.invitacion .nube{
+    width: 50em;
+    height: 50em;
+    margin-left: 19em;
+}
+.invitacion p{
+    width: 15em;
+    font-size: 5em;
+    margin-left: 0em;
+    padding: 1em;
+}
+.invitacion .hero__cta
+{   width: 10em;
+    font-size: 4em;
+
+
+}
+.invitacion a{position: absolute;
+   left: 9em;
+}
+.invitacion{
+    height: 160em;
+}
+    .invitacion{
+        margin-left: 15em;
+    }
+    .separador{
+        width: 18em;
+        height: 6em;
+        position: absolute;
+        margin-left:16em;
+        margin-top: 63em;
+    }
+        #imagenfinal{
+            width: 120em;
+            height: 80em;
+        }
+        #imagenfinal img{
+width: 40em;        }
+        #imagenfinal div{
+            margin-top: 6em;
+        }
+        #imagenfinal div p{
+font-size: 4em;
+        }
+        #imagenfinal div h1{
+            padding: 1em;
+            font-size: 4em;
+                    }
+        footer .ti{
+            width: 148em;
+        }
+    footer div{
+        width: 118em;
+    }
+    .confirmacion{
+        height: 330em;
+    }
+}
+    @media only screen 
+    and (max-width: 450px) {
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    #map img{
+     width: 140em;
+     height: 100em;
+        margin-left: 0em;
+    }
+        .modal__container{
+            margin: auto;
+
+           
+            height: 35em;
+            background-color: #fff;
+            border-radius: 0.5em;
+            padding: 1em;
+            display: grid;
+            gap: 1em;
+            place-items: center;
+            grid-auto-columns: 100%;
+            transform: var(--transform);
+            transition:var(--transition);
+        }
+        .inicio{   background: url(../img/grettacelular.png) no-repeat;
+            background-size:cover;
+            width: 114em;
+            height: 180em;}
+            .fechaa{
+                width: 78em;
+                height: 35em;
+            }
+            .fechaa h1{
+                margin-top: 0.5em;
+                font-size: 6em;
+            }
+            .fechaa img{
+                margin-top: -4em;
+              width: 40em;
+            }
+    #imagenfinal{
+        width: 115em;
+        height: 80em;
+    }
+    .invitacion h2{
+        font-size: 5em;
+        margin-left: -5em;
+    }
+    .invitacion p{
+    
+        font-size: 5em;
+        margin-left: -2.5em;
+    
+    }
+    .invitacion .nube{
+        width: 50em;
+        height: 50em;
+        margin-left: 4em;
+    }
+    
+    .invitacion img{
+        width: 30em;
+        margin-left: 14em;
+    }
+    
+    .invitacion .hero__cta{
+    
+        font-size: 2.5em;
+        left: 6em;
+    }
+    .invitacion{
+        height: 180em;
+        margin-left: 26em;
+    }
+
+    .invitacion .hero__cta {
+        margin-left: 11em;}
+    .confirmacion{
+        height: 300em;
+      
+    }
+    
+    #imagenfinal div{
+    margin-top: 10em;
+    }
+    #imagenfinal div p{
+        font-size: 3em;
+    }#imagenfinal div h1{
+        font-size: 3em;
+    }
+    .confirmacion .titulo {
+        font-size: 4em;
+        width: 15em;
+        margin-left: 2.5em;
+    }
+    
+    .confirmacion .mariposa {
+       width: 25em;
+        margin-left: 27em;
+    
+    }
+    .foto .isa{
+        width: 55em;
+        height: 55em;
+        margin-left: 8em;
+    }
+    
+    #imagenfinal img{
+        width: 30em;
+    }
+    footer .ti{
+        width: 139em;
+    }
+    footer div{
+        width: 115em;
+    }
+    .tittle p{
+        font-size: 2em;
+    }
+    .asistenciaa .tittle{
+width: 20em;
+margin-left: -7.5em;
+    }
+    .asistenciaa .info{
+        margin-left: -11em;
+    }
+    .asistenciaa a{
+        position: absolute;
+        left: 21em;
+        width: 19em;
+        font-size: 1.8em;
+    }
+    .asistenciaa
+        {
+         font-size: 1.5em;
+        margin-top: 55em;
+           margin-left: 20em;
+           width: 20em;
+        }
+    .separador {position:absolute;
+        width: 22em;
+        height: 5;
+    margin-top: 76em;
+    margin-left: 10em;
+    }
+    .sugerencias
+    {
+        margin-left: 18em;
+       
+    }
+    .sugerencias div p{
+        font-size: 4em;
+        margin-left: -2em;
+    }
+    .sugerencias div img{
+        width: 50em;
+        margin-left: -8em;
+    }
+    }
+   
+    @media only screen 
+and (max-width: 420px) {
+    .inicio{   background: url(../img/grettacelular.png) no-repeat;
+        background-size:contain;
+        height: 55em;}
+        #imagenfinal{
+            height: 50em;
+        }
+    section{
+        width: 110%;
+        height: 100vh;
+    
+    }
+    .fechaa{
+        width: 110%;
+       
+        
+    }
+    .fechaa h1{
+        font-size: 2em;
+    }
+    .invitacion h2{
+        font-size: 1.8em;
+    }
+    footer{
+        width: 110%;
+  
+    
+    }
+
+    #imagenfinal{
+          
+        margin-top: 70em;
+         
+    }
+
+    .confirmacion{
+      height: 60em;
+        text-align: center;
+    }
+
+    #imagenfinal img{
+       
+      top: -10em;
+    }
+}
+
+
+    @media only screen 
+    and (max-width: 420px) {
+        .inicio{   background: url(../img/grettacelular.png) no-repeat;
+            background-size:cover;
+            width: 104em;
+            height: 130em;}
+        .invitacion{
+            height: 260em;
+           
+              
+               
+        }
+        
+    .fechaa{
+        margin-top: -1em;
+        width: 70em;
+        height: 46em;
+    }
+
+    .fechaa h1{
+        font-size: 7em;
+    }
+    .invitacion h2
+    {
+        font-size: 6em;
+        margin-left:-7em ;
+    }
+    .invitacion p{
+        font-size: 6em;
+        margin-left: -4em;
+    }
+    .invitacion .hero__cta{position: absolute;
+        font-size: 3.5em;
+        left: -2em;
+    }
+    .invitacion img{
+        width: 46em;
+        margin-left: 2em;
+    }
+        .invitacion .nube{
+            width: 56em;
+            height:56em;
+            margin-left: -3em;
+        }
+        .confirmacion .titulo{
+            margin-left: 1em;
+        }
+     .confirmacion .mariposa{
+        margin-left: 13em;
+        width: 40em;
+    }
+        .fechaa{
+            padding-bottom: -1em;
+        }
+       .foto .isa{
+        margin-left: 2em;
+       }
+    .foto .isa{
+        width: 56em;
+        height: 56em;
+    }
+       
+        #imagenfinal{
+            height: 90em;
+            margin-top: 100em;
+             
+        }
+
+        .sugerencias div img{
+            width: 56em;
+            height: 56em;
+            margin-left: -1em;
+        }
+        .sugerencias {
+            position:relative;
+            margin-top: -5em;
+            margin-left: 5em;
+        }
+        .sugerencias div p{
+            font-size: 4em;
+            margin-left: -8em;
+            width: 30em;
+        }
+        .confirmacion{
+            height: 270em;
+        }
+        .asistenciaa .info{
+            margin-left: -9em;
+
+        }
+        .asistenciaa .tittle{
+            margin-left: -5em;
+        }
+        .asistenciaa
+        {
+         
+        margin-top: 50em;
+           margin-left: 10em;
+           width: 20em;
+        }
+        .asistenciaa a{
+            margin-left: -18.5em;
+        }
+    .separador {position:absolute;
+        width: 26em;
+        height: 5;
+    margin-top: 70em;
+    margin-left: 5em;}
+        .confirmacion{
+            position: relative;
+            margin-top: -20em;
+     height: 290em;
+            text-align: center;
+        }
+    
+        footer .ti{
+            width: 127em;
+        }
+    footer div{
+        width: 103em;
+    }
+
+    #imagenfinal img{
+        width: 46em;
+    }
+       #imagenfinal{
+        width: 105em;
+       }
+    }
+    
+    @media only screen 
+    and (max-width: 400px) {
+        .inicio{   background: url(../img/grettacelular.png) no-repeat;
+            background-size:cover;
+            width: 100em;
+            height: 170em;
+        }
+        .fechaa h1{
+                font-size: 7em;
+                
+        }
+        .fechaa{
+            
+            width: 72em;
+            height: 38em; margin-left: -6em;
+        }
+.invitacion{
+    height: 230em;
+    margin-left: 15em;
+}
+
+.invitacion h2{
+font-size: 5em;
+margin-left: -4em;
+}
+.invitacion p{
+    font-size: 5em;
+    margin-left: -2em;
+}
+.invitacion .nube{
+    width: 50em;
+    height: 50em;
+    margin-left: 9em;
+}
+.invitacion img{
+    width: 40em;
+    margin-left: 15em;
+}
+.invitacion .hero__cta{
+    left: -3em;
+    font-size: 3.5em;
+}
+        .confirmacion .titulo{
+            margin-left: 0em;
+        }
+.confirmacion .mariposa{
+    margin-left: 12em;
+}
+        .foto .isa{
+            width: 50em;
+            height: 50em;
+            margin-left: -0.5em;
+        }
+    .sugerencias div img{
+        width: 50em;
+        height: 50em;
+    }
+    .sugerencias div p{
+        font-size: 4em;
+        width: 30em;
+        margin-left: -9em;
+    }
+        .asistenciaa
+        {
+         
+        margin-top: 40em;
+           margin-left: 9em;
+           width: 20em;
+        }
+        .asistenciaa .info{
+            margin-left: -9em;
+        }
+        .asistenciaa a{
+            position: absolute;
+            left: 19em;
+            width: 18em;
+        }
+    .separador {position:absolute;
+        width: 30em;
+        height: 1;
+    margin-top: 56em;
+    margin-left: 3em;}
+
+.confirmacion{
+    height:  270em;
+}
+
+    #imagenfinal{
+        width: 100em;
+        height: 100em;
+    }
+    footer .ti{
+        width: 130em;
+    }
+    footer div{
+        width: 110em;
+    }
+    }
+
+
+    @media only screen 
+and (max-width: 380px) {
+  
+    section{
+   
+        height: 100vh;
+    
+    }
+    
+.inicio{   background: url(../img/grettacelular.png) no-repeat;
+    background-size:cover;
+    height: 120em;
+width: 91em;}
+    
+.fechaa{
+
+    width: 63em;
+
+
+}
+    .fechaa h1{
+        font-size: 5em;
+    }
+.invitacion
+{
+height: 230em;
+margin-left: 18em;
+}
+.invitacion p{
+    font-size: 4em;
+    margin-left: -1.5em;
+}
+    .invitacion h2{
+        font-size: 4em;
+    }
+
+    .invitacion .nube{ width: 50em;
+        height: 50em;
+        margin-left: 2em;
+       
+    }
+
+    .invitacion img{
+        margin-left: 7em;
+    }
+
+    .invitacion .hero__cta{
+        left: -4em;
+    }
+  #imagenfinal{
+     top: 100em;
+       width: 93em;
+  
+    
+    }
+    footer .ti {
+        width: 115em;
+    }
+    footer div{
+        width: 90em;
+    }
+
+    .asistenciaa .tittle{
+        margin-left: -2em;
+    }
+  .asistenciaa{
+    margin-top: 86em;
+  }
+  .asistenciaa .info{
+    margin-left: -5em;
+  }
+.asistenciaa a{
+    position: absolute;
+   left: 19em;
+
+}
+    .foto .isa
+    {
+        
+        width: 50em;
+        height: 50em;
+  margin-left: 15em;
+  
+       
+    }
+
+    .confirmacion{
+       height: 300em;
+
+       margin-left: 1.5em;
+     
+    }
+    .confirmacion p{
+        font-size: 1em;
+    }
+    .confirmacion .titulo{
+        font-size: 5em;
+        margin-left: 1em;
+    }
+    .confirmacion .mariposa {
+        margin-left: 26em
+    }
+    .confirmacion a{
+       font-size: 2em;
+       left: 24em;
+    }
+    .sugerencias div p{
+        width: 10em;
+        margin-left: 7em;
+        font-size: 4em;
+    }
+    .sugerencias{
+        width: 120%;
+        height: 20em;
+    }
+.sugerencias{
+    margin-left: -2.5em;
+}
+    .sugerencias div img{
+        width: 50em;
+        height: 50em;
+        margin-left: 21em;
+    }
+
+    .sugerencias{
+        height: 32em;
+    }
+
+
+
+    .separador{
+        width: 25em;
+        height: 6em;
+        margin-top: 125em;
+        margin-left: 18em;
+    }
+    #imagenfinal img{
+       width: 30em;
+        top: -10em;
+      }
+
+
+
+    }
+    @media only screen 
+    and (max-width: 350px) {
+        .inicio{   background: url(../img/grettacelular.png) no-repeat;
+            background-size:cover;
+            height: 130em;
+        width: 90em;}
+        #imagenfinal{
+         
+            width:85em;
+        }
+.fechaa .hero__cta{position: absolute;
+  left: -2em;
+}
+        .fechaa{width: 85em;}
+        .fechaa h1{
+            font-size: 6em;
+            margin-left: 2em;
+        }
+        .fechaa img{
+           
+            margin-left: 6em;
+        }
+        footer .ti{
+            width: 105em;
+        }
+        footer div{
+            width:83em;
+        }
+        .confirmacion{
+      
+            margin-left: 20em;
+          height: 290em;
+            
+        }
+        .confirmacion a{
+            font-size: 2em;
+           left: 2em
+        }
+        .asistenciaa{
+            margin-top: 80em;
+        }
+        .asistenciaa .info{
+            font-size: 1.5em;
+            margin-left: -11em;
+        }
+        .asistenciaa .tittle{
+            margin-left: -8em;
+        }
+        .separador{
+            width: 25em;
+            height: 6em;
+            margin-top: 115em;
+            margin-left: -2em;
+        }
+.asistenciaa a{
+    margin-left: -4em;
+}
+.invitacion{
+    height: 220em;
+}
+.invitacion h2{
+    font-size: 4em;
+    margin-left: -5em;
+}
+
+.invitacion{
+    margin-left: 19em;
+}
+.invitacion p
+{
+    margin-left: -3em;
+}
+.invitacion .nube{
+    margin-left:-2em;
+    width: 50em;
+    height: 50em;
+}.invitacion .hero__cta{
+    left: -5em;
+}
+.invitacion img{
+    width: 39em;
+    margin-left:4em;
+}
+.fechaa{
+    padding-left: 1.8em;
+}
+.confirmacion .titulo{
+    margin-left: -3em;
+}
+.confirmacion .mariposa{
+    margin-left: 6em;
+}
+    .sugerencias div p{
+        width: 10em;
+      margin-left: 1em;
+    }
+.sugerencias div img{
+    width: 50em;
+    height: 50em;
+    margin-left: -0.5em;
+}
+
+
+        .foto .isa  {
+            width: 50em;
+            height: 50em;
+            margin-left: -5em;
+        }
+    }
+
+
+
+
